@@ -25,29 +25,35 @@ def get_audio():
 
 speak("hello and welcome, how can I help you")
 
-text = get_audio()
+while True: 
+    text = get_audio()
 
-if "what is your name" in text:
-    speak("My name is Robot")
+    if "what is your name" in text:
+        speak("My name is Robot")
 
-if "how are you" in text:
-    speak("I am fine thank you, and what about you?")
+    if "how are you" in text:
+        speak("I am fine thank you, and what about you?")
+
+    if "how old are you" in text:
+        speak("sorry it is not your business")
 
 
-if "how old are you" in text:
-    speak("sorry it is not your business")
+    if "are you stupid" in text:
+        speak("no, I am smart")
 
+    if "are you donkey" in text:
+        speak("no I am robot")
 
-if "are you stupid" in text:
-    speak("no, I am smart")
+    if "camera" in text:
+        speak("ok sir")
+        os.system('/usr/bin/cheese')
 
-if "are you donkey" in text:
-    speak("no I am robot")
+    if "music" in text:
+        speak("ok sir")
+        os.system('/usr/bin/drumstick-vpiano')
 
-if "camera" in text:
-    speak("ok sir")
-    os.system('/usr/bin/cheese')
+    if "what is the time now" in text:
+        speak("Fr 22 Mai 2020 13:21:55 CEST")
 
-if "music" in text:
-    speak("ok sir")
-    os.system('/usr/bin/drumstick-vpiano')
+    if "shark" in text:
+        os.system('/usr/bin/mplayer /home/ahmed/baby_shark.mp3')
