@@ -57,3 +57,7 @@ while True:
 
     if "shark" in text:
         os.system('/usr/bin/mplayer /home/ahmed/baby_shark.mp3')
+
+    if "Mario" in text:
+        speak("ok mamdam")
+        os.system('/snap/bin/mari0')
