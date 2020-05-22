@@ -44,3 +44,10 @@ if "are you stupid" in text:
 if "are you donkey" in text:
     speak("no I am robot")
 
+if "camera" in text:
+    speak("ok sir")
+    os.system('/usr/bin/cheese')
+
+if "music" in text:
+    speak("ok sir")
+    os.system('/usr/bin/drumstick-vpiano')
